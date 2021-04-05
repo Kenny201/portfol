@@ -42,6 +42,36 @@ a:focus {
     outline: none !important;
 }
 
+// html {
+//     background-repeat: no-repeat;
+//     background-position: 50% 0;
+//     /* Mobile layout by default */
+//     background-image: url("320.png");
+// }
+
+// /* Tablet */
+// @media (min-width: 768px) {
+//     html {
+//         /* Tablet layout */
+//         background-image: url("768.png");
+//     }
+// }
+
+// /* Desktop */
+// @media (min-width: 1024px) {
+//     html {
+//         /* Desktop layout */
+//         background-image: url("1024.png");
+//     }
+// }
+
+// @media (min-width: 1920px) {
+//     html {
+//         /* Desktop layout */
+//         background-image: url("1024.png");
+//     }
+// }
+
 $orange: #F15A24;
 
 input.error {
