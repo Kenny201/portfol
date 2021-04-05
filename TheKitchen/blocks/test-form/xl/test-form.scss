@@ -1,0 +1,33 @@
+@include media-breakpoint-up(xl) {
+    .test-form {
+        &__title {
+            width: 73%;
+            font-size: 30px;
+        }
+        .test-form-decor__img{
+            width: 350px;
+            height: 100%;
+            bottom: -185px;
+            &:after{
+                background: url("/decor-image/decore-12.png") no-repeat 120px 0px ;
+                background-size: 100%;
+          
+        }
+        @media screen and (min-width: 1300px) {
+            &:after{
+                background: url("/decor-image/decore-12.png") no-repeat 67px 0px ;
+                background-size: 100%;
+          
+        }
+        }
+    }
+        .test-form__wrap {
+            padding: 60px 73px;
+        }
+
+        .container {
+            max-width: 1140px;
+            padding: 10px 1rem;
+        }
+    }
+}

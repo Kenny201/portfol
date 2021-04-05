@@ -1,0 +1,123 @@
+@include media-breakpoint-up(xs) {
+    .call-form {
+        overflow: hidden;
+
+        &__content {
+            position: relative;
+            margin: 20px 0 0 0;
+            padding: 0px 20px 20px 20px;
+        }
+
+        &__inner {
+            position: relative;
+        }
+
+        &__subtitle {
+            margin: 0 0 30px 0;
+        }
+
+        &__title {
+            margin: 0 0 30px 0;
+            font-size: 18px;
+        }
+
+        &__check {
+            display: flex;
+            align-items: center;
+            width: 50%;
+            label {
+                display: block;
+                font-size: 15px;
+            }
+        }
+
+        &__tel {
+            position: relative;
+            z-index: 2;
+            margin: 0 0 18px 0;
+            padding: 28px 35px;
+            border: none;
+            border-radius: 40px;
+            background: #fafafa;
+            box-shadow: inset 1px 4px 6px rgba(0, 0, 0, 0.06);
+        }
+
+        &__check--style {
+            position: absolute; // take it out of document flow
+            width: 16px;
+            height: 16px;
+            opacity: 0; // hide it
+            outline: 1px solid $orange;
+
+            &+label {
+                position: relative;
+                margin: 0 0 0 25px;
+                padding: 0;
+                cursor: pointer;
+
+                a {
+                    color: $orange;
+                }
+            }
+
+            // Box.
+            &+label:before {
+                position: relative;
+                top: 18px;
+                left: -24px;
+                display: flex;
+                width: 16px;
+                height: 16px;
+                margin-right: 10px;
+                content: "";
+                vertical-align: text-top;
+                border: 1px solid $orange;
+            }
+
+            &:checked+label:after {
+                position: absolute;
+                top: 25px;
+                left: -21px;
+                width: 2px;
+                height: 2px;
+                content: "";
+                transform: rotate(45deg);
+                background: black;
+                box-shadow: 2px 0 0 black, 4px 0 0 black, 4px -2px 0 black,
+                    4px -4px 0 black, 4px -6px 0 black, 4px -8px 0 black;
+            }
+        }
+
+        &__button {
+            width: 80%;
+
+            @media (min-width: 400px) and (max-width: 576px) {
+                width: 250px;
+            }
+
+            .button-calculate {
+                width: 100%;
+            }
+        }
+
+        &__image {
+            position: absolute;
+            z-index: 1;
+            top: 117px;
+            right: -61px;
+            width: 177px;
+            height: 158px;
+            
+            @media (min-width: 425px) and (max-width: 576px) {
+                top: 108px;
+                right: 5px;
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(xs) {}

@@ -1,0 +1,61 @@
+@include media-breakpoint-up(sm) {
+    .header {
+        .mobile-menu__toggle {
+            display: none;
+        }
+
+        .small-menu {
+            display: flex;
+            justify-content: space-between;
+            margin: 25px 0 0 0;
+
+            .header__nav-link {
+                color: inherit;
+            }
+        }
+
+        &__wrap {
+            margin: 20px 0 0 0;
+        }
+
+        &__logo-text {
+            letter-spacing: 1px;
+            font-size: 14px;
+        }
+
+        .logo-color {
+            font-size: 31px;
+
+            &:after {
+                top: -12px;
+                right: 2px;
+                width: 45px;
+                height: 45px;
+                background-size: cover;
+            }
+        }
+
+        &__tel {
+            position: relative;
+            display: block;
+            font-size: 18px;
+            font-style: Regular;
+
+            &:before {
+                position: absolute;
+                top: 3px;
+                left: -30px;
+                width: 19px;
+                height: 19px;
+                content: '';
+                background: url("tel-icon.svg");
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            a {
+                color: inherit;
+            }
+        }
+    }
+}

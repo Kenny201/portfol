@@ -1,0 +1,137 @@
+@include media-breakpoint-up(xs) {
+    .client-item {
+        width: 48%;
+        height: 67px;
+        padding: 10px;
+        border-radius: 20px;
+        background: #fff;
+    }
+
+    .image-client {
+        width: 100%;
+        height: 100%;
+    }
+
+    .reviews {
+        .container {
+            max-width: 100%;
+        }
+
+        &__wrap {
+            margin-top: 145px;
+            padding: 53px 10px;
+            background-color: #FEF7EC;
+        }
+
+        &__clients {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 9px 0px;
+            padding: 0 5px;
+        }
+
+
+        .tab-content {
+            margin: 20px 0 0 0;
+        }
+        
+        &__content-left {
+            .nav-link.active {
+                border: none;
+                box-shadow: 0px 4px 70px rgba(241, 90, 36, 0.25);
+            }
+            .nav-link:hover {
+                border: none;
+                box-shadow: 0px 4px 70px rgba(241, 90, 36, 0.25);
+            }
+        }
+        &__content-right {
+            padding: 0 5px;
+        }
+
+        &__image {
+            width: 100%;
+            @media (min-width: 400px ) and (max-width: 575px){
+                width: 80%;
+                margin: 0 auto;
+            }
+            img {
+                width: 100%;
+            }
+        }
+
+
+        &__subtitle {
+            margin: 0 0 40px 0;
+            font-size: 18px;
+        }
+
+        &__title {
+            span {
+                color: $orange;
+                font-weight: bold;
+            }
+        }
+        
+        &__video {
+            margin: 30px 0 0 0;
+        }
+        .button-play{
+            width: 70px;
+            height: 70px;
+            position: absolute;
+            border-radius: 100%;
+            border: 2px solid #fff;
+            background-color:rgba($color: #fff, $alpha: .4);
+            &:hover{
+                background-color:  #fff;
+                .button-play__svg{
+                    path{
+                        fill: $orange; 
+                    }
+                }
+            }
+            &__icon{
+                position: relative;
+                left: 33%;
+                top: 25%;
+                
+            }
+           
+        }
+        &__video-item {
+            width: 100%;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+                width: inherit;
+            }
+        }
+        .glide__slides, .glide__track{
+            margin: 0 -22px 0 0;
+        }
+        .nav-tabs .nav-item.show .nav-link,
+        .nav-tabs .nav-link.active {
+            border: none;
+        }
+
+        .nav-tabs {
+            border: none;
+        }
+
+        .nav-tabs .nav-link {
+            border: none;
+            border-radius: 15px;
+            background-color: #fff;
+
+            &:focus {
+                border: none;
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(xs) {}

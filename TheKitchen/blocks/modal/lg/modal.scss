@@ -1,0 +1,50 @@
+@include media-breakpoint-up(lg) {
+  .modal {
+    max-width: 920px;
+    padding: 40px 35px 60px 35px;
+    .form-group,.navigation-wrap{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      
+    } 
+
+    .form-group{
+      flex-wrap: wrap;
+      .input__tel{
+        width: 80%;
+      }
+      .form_radio,  #name,.input__tel{
+        padding: 20px 0 20px 30px;
+      }
+      .form-control, .form_radio{
+        width: 48%;
+      }
+    }
+    .msf-navigation{
+      margin: 0 0 0 40px;
+    }
+    .button__wrap{
+      width: 50%;
+      order: 2;
+    }
+    .progress-wrap{
+      width: 60%;
+      order:1;
+    }
+  }
+  .thanks{
+    .modal{
+      max-width: 550px;
+    }
+  }
+  .thanks__image {
+    width: 79%;
+    position: relative;
+    bottom: -60px;
+    left: 29%;
+  }
+  .thanks__message{
+    left: 38px; 
+  }
+}

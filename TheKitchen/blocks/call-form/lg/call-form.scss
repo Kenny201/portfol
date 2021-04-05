@@ -1,0 +1,22 @@
+@include media-breakpoint-up(lg) {
+    .call-form {
+        &__image {
+            position: absolute;
+            top: -19px;
+            right: -297px;
+            width: 60%;
+        }
+
+        &__title {
+            margin-bottom: 30px;
+        }
+
+        &__subtitle {
+            padding: 0 60px 0 0;
+        }
+
+        &__tel {
+            width: 84%;
+        }
+    }
+}

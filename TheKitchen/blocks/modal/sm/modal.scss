@@ -1,0 +1,28 @@
+@include media-breakpoint-up(sm) {
+  .modal {
+    max-width: 70%;
+    padding: 40px 35px;
+    .overlay-push:after {
+      bottom: -10em;
+      left: 20em;
+      width: 14em;
+      height: 14em;
+      background-size: 122%;
+    }
+    
+  }
+
+  .thanks__image {
+
+    bottom: -40px;
+    left: 18%;
+  }
+  .thanks__message{
+    position: absolute;
+    bottom: 64%;
+    width: 50%;
+    font-size: 25px;
+    font-weight: 700;
+    color: #fff;
+}
+}

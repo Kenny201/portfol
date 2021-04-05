@@ -1,0 +1,32 @@
+@include media-breakpoint-up(xxl) {
+    .test-form {
+        .container {
+            max-width: 1180px;
+        }
+
+        .test-form-decor__img {
+            right: 0;
+            bottom: -165px;
+            width: 400px;
+            height: 100%;
+            
+            @media screen and (min-width: 1700px){
+                right: 50px;
+                background-position: 0px 0px;
+            }
+            @media screen and (min-width: 1800px){
+                right: 150px;
+               
+            }
+            &:after {
+                background: url("/decor-image/decore-12.png") no-repeat ;
+                background-position: 70px 0px;
+                background-size: 100%;
+            }
+        }
+
+        &__title {
+            width: 70%;
+        }
+    }
+}

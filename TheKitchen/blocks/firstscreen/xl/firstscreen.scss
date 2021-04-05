@@ -1,0 +1,51 @@
+@include media-breakpoint-up(xl) {
+    .firstscreen {
+        min-height: 670px;
+        background-position: 23em -1em, 33em 9em;
+
+        .glide__slides {
+            display: grid;
+            margin: 85px 0 0 0;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-column-gap: 10px;
+            grid-row-gap: 10px;
+        }
+
+        &__title {
+            margin: 100px 0 30px;
+        }
+
+        &__title--style {
+            line-height: 72px;
+        }
+
+        .advantages__text {
+            font-size: 16px;
+        }
+
+        .glide__slide .advantages__item {
+            width: 100% !important;
+            min-height: 100%;
+            padding: 5px;
+
+            .advantages__img {
+                display: flex;
+                justify-content: center;
+                width: 20%;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+
+        .glide__slide:nth-child(1) .advantages__item {
+            .advantages__img {
+                img {
+                    left: 0;
+                    transform: rotate(0deg);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+.interview-form
+  .container
+    .row 
+      .interview-form__content.col-md-8.offset-md-4
+            .interview-form_title Пройдите опрос и 
+              span.color-text получите бесплатно 
+              | подробное меню и расчет стоимости
+            .interview-form_inner 
+              .interview-form_img
+                img(src="images/interview-calc.png", alt="расчёт")
+              .interview-form_desc
+                span.color-text Подробное меню
+                span.interview-form_plus
+                span.color-text Индивидуальный расчёт 
+            .interview-form_button.btn-overlay
+                include ../button-calculate/button-calculate 
+                    span Рассчитать стоимость 
+                      span.text-menu меню
+                    
