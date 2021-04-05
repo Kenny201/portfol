@@ -1,0 +1,21 @@
+@include media-breakpoint-up(md) {
+  .modal {
+    max-width: 510px;
+    padding: 60px 60px 80px 60px;
+    .overlay-people input {
+      margin: 0 0 15px 0;
+    }
+  
+ 
+}
+.thanks__image {
+
+  width: 100%;
+  position: relative;
+  bottom: -79px;
+  left: 17%;
+}
+.thanks__message{
+  left: 38px; 
+}
+}

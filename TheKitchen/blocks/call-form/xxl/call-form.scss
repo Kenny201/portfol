@@ -1,0 +1,27 @@
+@include media-breakpoint-up(xxl) {
+    .call-form {
+        .container {
+            width: 1246px;
+        }
+
+        &__title {
+            margin: 0 0 40px 0;
+            line-height: 45px;
+        }
+
+        &__subtitle {
+            margin: 0 0 55px;
+        }
+
+        &__image {
+            top: -28px;
+            right: -75%;
+            width: 73%;
+        }
+
+        &__button {
+            width: 38%;
+            margin: 40px 0 0;
+        }
+    }
+}

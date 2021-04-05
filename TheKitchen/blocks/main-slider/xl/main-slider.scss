@@ -1,0 +1,21 @@
+@include media-breakpoint-up(xl) {
+  .main-slider {
+    
+    .glide__slide {
+        
+
+        img{width: 99%;}
+    }
+    .glide__arrow--left {
+      left: 13em;
+  }
+
+  .glide__arrow--right {
+      right: 13em;
+  }
+
+    .glide__arrow{
+      top:50%;
+  }
+  }
+  }

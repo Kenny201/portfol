@@ -1,0 +1,19 @@
+@include media-breakpoint-up(lg) {
+    .test-form {
+        .container {
+            max-width: 856px;
+            padding: 10px 1rem;
+        }
+        .test-form-decor__img{
+            width: 330px;
+            height: 100%;
+            bottom: -185px;
+            right: 0px;        
+            &:after{
+                background: url("/decor-image/decore-12.png") no-repeat 55px 0px ;
+                background-size: 100%;
+          
+        }
+        }
+    }
+}

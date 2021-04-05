@@ -1,0 +1,172 @@
+mixin menuKitchen(title, [...names], [...gramms], images)
+	.item
+		.item-title= title 
+		.menu-item__wrap
+					each name, item in names
+						.menu-item
+								span= name
+								span= gramms[item]
+		.menu-image
+					img(src= images alt="изображение меню")
+- var breakfast = "images/breakfast.png"
+- var lunch = "images/lunch.png"
+- var dinner = "images/dinner.png";
+.kitchen-menu#kitchen-menu
+	.kitchen-menu-decor__img
+	.container
+			.kitchen-menu__title
+				h2 Какое у нас 
+					span меню
+					| ? 
+			.kitchen-menu__subtitle Вы выбираете подходящий тип питания: можем доставлять как 
+				span 3-х разовое питание
+				| , так и 
+				span только обеды
+			.kitchen-menu__navbar-wrap
+					.kitchen-menu__day-nav.glide
+									.glide__track(data-glide-el="track")
+										ul.kitchen-menu__tabs.glide__slides.nav.nav-pills.mb-3(role="tablist")
+											li.glide-slide.nav-item
+												button.nav-link.active#tab-mon( data-bs-toggle="pill" data-bs-target="#menu-mon" type="button" role="tab" aria-controls="menu-mon" aria-selected="true")  Пн
+											li.glide-slide.nav-item
+												button.nav-link#tab-tue( data-bs-toggle="pill" data-bs-target="#menu-tue" type="button" role="tab" aria-controls="menu-tue" aria-selected="false") Вт
+											li.glide-slide.nav-item
+												button.nav-link#tab-wed( data-bs-toggle="pill" data-bs-target="#menu-wed" type="button" role="tab" aria-controls="menu-wed" aria-selected="false") Ср
+											li.glide-slide.nav-item
+												button.nav-link#tab-thu( data-bs-toggle="pill" data-bs-target="#menu-thu" type="button" role="tab" aria-controls="menu-thu" aria-selected="false") Чт
+											li.glide-slide.nav-item
+												button.nav-link#tab-fri( data-bs-toggle="pill" data-bs-target="#menu-fri" type="button" role="tab" aria-controls="menu-fri" aria-selected="false") Пт
+											li.glide-slide.nav-item
+												button.nav-link#tab-sat( data-bs-toggle="pill" data-bs-target="#menu-sat" type="button" role="tab" aria-controls="menu-sat" aria-selected="false") Сб
+											li.glide-slide.nav-item
+												button.nav-link#tab-sun( data-bs-toggle="pill" data-bs-target="#menu-sun" type="button" role="tab" aria-controls="menu-sun" aria-selected="false") Вc
+									.glide__arrows(data-glide-el="controls")
+										button.glide__arrow.glide__arrow--left(data-glide-dir="<")
+										button.glide__arrow.glide__arrow--right(data-glide-dir=">")
+					.kitchen-menu__day-weeks
+							.kitchen-menu__tabs.nav.nav-tabs(role="tablist")
+										button.nav-link.active#tab-week1( data-bs-toggle="pill" data-bs-target="#menu-week1" type="button" role="tab" aria-controls="menu-week1" aria-selected="true")  1 неделя
+										button.nav-link#tab-week2( data-bs-toggle="pill" data-bs-target="#menu-week2" type="button" role="tab" aria-controls="menu-week2" aria-selected="false") 2 неделя
+										button.nav-link#tab-week3( data-bs-toggle="pill" data-bs-target="#menu-week3" type="button" role="tab" aria-controls="menu-week3" aria-selected="false") 3 неделя
+										button.nav-link#tab-week4( data-bs-toggle="pill" data-bs-target="#menu-week4" type="button" role="tab" aria-controls="menu-week4" aria-selected="false") 4 неделя
+			.tab-content
+							.tab-pane.fade.show.active#menu-week1(role="tabpanel" aria-labelledby="tab-week1")
+										.kitchen-menu__content.tab-content
+											.tab-pane.fade.show.active#menu-mon(role="tabpanel" aria-labelledby="tab-mon")
+												+menuKitchen('Завтрак', ['запеканка рисовая', "яицо отварное", "Булочка с сахаром", "Кофе"], ['100гр', '200гр', '300гр', '400гр'], breakfast)
+												+menuKitchen('Обед', ['Салат Оливье', "Рыба под-маринадом", "Картофельное пюре", "Суп-лапша куриная", "Компот фруктовый"], ['1100гр', '400гр', '200гр', '425гр', '200мл'], lunch)
+												+menuKitchen('Ужин', ['Салат Витаминный', "Котлета куриная", "Рис отварной", " Хлеб"], ['100гр', '120гр', '200гр', '70гр'], dinner)
+											.tab-pane.fade#menu-tue(role="tabpanel" aria-labelledby="tab-tue")
+												+menuKitchen('Завтрак', ['Каша манная ', "Мандарин ", "Булочка с сахаром", "Кофе"], ['100гр', '200гр', '300гр', '400гр'], breakfast)
+												+menuKitchen('Обед', ['Салат для избранных', "Рыба под-маринадом", "Картофельное пюре", "Суп-лапша куриная", "Компот фруктовый"], ['1100гр', '400гр', '200гр', '425гр', '200мл'], lunch)
+												+menuKitchen('Ужин', ['Салат Витаминный', "Котлета куриная", "Рис отварной", " Хлеб"], ['100гр', '120гр', '200гр', '70гр'], dinner)
+											.tab-pane.fade#menu-wed(role="tabpanel" aria-labelledby="tab-wed")
+												+menuKitchen('Завтрак', ['Чай ', "Яйцо в смятку ", "Булочка с сахаром", "Кофе"], ['100гр', '200гр', '300гр', '400гр'], breakfast)
+												+menuKitchen('Обед', ['Салат Оливье', "Рыба под-маринадом", "Картофельное пюре", "Суп-лапша куриная", "Компот фруктовый"], ['1100гр', '400гр', '200гр', '425гр', '200мл'], lunch)
+												+menuKitchen('Ужин', ['Салат Витаминный', "Котлета куриная", "Рис отварной", " Хлеб"], ['100гр', '120гр', '200гр', '70гр'], dinner)
+											.tab-pane.fade#menu-thu(role="tabpanel" aria-labelledby="tab-thu")
+												+menuKitchen('Завтрак', ['Салатик из фруктов ', "Яйцо отварное ", "Булочка с сахаром", "Кофе"], ['100гр', '200гр', '300гр', '400гр'], breakfast)
+												+menuKitchen('Обед', ['Салат Обычный', "Рыба под-маринадом", "Картофельное пюре", "Суп-лапша куриная", "Компот фруктовый"], ['1100гр', '400гр', '200гр', '425гр', '200мл'], lunch)
+												+menuKitchen('Ужин', ['Салат Витаминный', "Котлета куриная", "Рис отварной", " Хлеб"], ['100гр', '120гр', '200гр', '70гр'], dinner)
+											.tab-pane.fade#menu-fri(role="tabpanel" aria-labelledby="tab-fri")
+												+menuKitchen('Завтрак', ['Голодаем ', "Яйцо отварное ", "Булочка с сахаром", "Кофе"], ['100гр', '200гр', '300гр', '400гр'], breakfast)
+												+menuKitchen('Обед', ['Суп лапша', "Рыба под-маринадом", "Картофельное пюре", "Суп-лапша куриная", "Компот фруктовый"], ['1100гр', '400гр', '200гр', '425гр', '200мл'], lunch)
+												+menuKitchen('Ужин', ['Салат Витаминный', "Котлета куриная", "Рис отварной", " Хлеб"], ['100гр', '120гр', '200гр', '70гр'], dinner)
+											.tab-pane.fade#menu-sat(role="tabpanel" aria-labelledby="tab-sat")
+												+menuKitchen('Завтрак', ['Тортик ', "Яйцо отварное ", "Булочка с сахаром", "Кофе"], ['100гр', '200гр', '300гр', '400гр'], breakfast)
+												+menuKitchen('Обед', ['Салат Оливье', "Рыба под-маринадом", "Картофельное пюре", "Суп-лапша куриная", "Компот фруктовый"], ['1100гр', '400гр', '200гр', '425гр', '200мл'], lunch)
+												+menuKitchen('Ужин', ['Салат Витаминный', "Котлета куриная", "Рис отварной", " Хлеб"], ['100гр', '120гр', '200гр', '70гр'], dinner)
+											.tab-pane.fade#menu-sun(role="tabpanel" aria-labelledby="tab-sun")
+												+menuKitchen('Завтрак', ['Паста балоньезе', "Яйцо отварное ", "Булочка с сахаром", "Кофе"], ['100гр', '200гр', '300гр', '400гр'], breakfast)
+												+menuKitchen('Обед', ['Суп лапша', "Рыба под-маринадом", "Картофельное пюре", "Суп-лапша куриная", "Компот фруктовый"], ['1100гр', '400гр', '200гр', '425гр', '200мл'], lunch)
+												+menuKitchen('Ужин', ['Салат Витаминный', "Котлета куриная", "Рис отварной", " Хлеб"], ['100гр', '120гр', '200гр', '70гр'], dinner)
+							.tab-pane.fade#menu-week2(role="tabpanel" aria-labelledby="tab-week2")
+										.kitchen-menu__content.tab-content
+											.tab-pane.fade.show.active#menu-mon-week2(role="tabpanel" aria-labelledby="tab-mon")
+												+menuKitchen('Завтрак', ['запеканка рисовая', "яицо отварное", "Булочка с сахаром", "Кофе"], ['100гр', '200гр', '300гр', '400гр'], breakfast)
+												+menuKitchen('Обед', ['Салат Оливье', "Рыба под-маринадом", "Картофельное пюре", "Суп-лапша куриная", "Компот фруктовый"], ['1100гр', '400гр', '200гр', '425гр', '200мл'], lunch)
+												+menuKitchen('Ужин', ['Салат Витаминный', "Котлета куриная", "Рис отварной", " Хлеб"], ['100гр', '120гр', '200гр', '70гр'], dinner)
+											.tab-pane.fade#menu-tue-week2(role="tabpanel" aria-labelledby="tab-tue")
+												+menuKitchen('Завтрак', ['Каша манная ', "Мандарин ", "Булочка с сахаром", "Кофе"], ['100гр', '200гр', '300гр', '400гр'], breakfast)
+												+menuKitchen('Обед', ['Салат для избранных', "Рыба под-маринадом", "Картофельное пюре", "Суп-лапша куриная", "Компот фруктовый"], ['1100гр', '400гр', '200гр', '425гр', '200мл'], lunch)
+												+menuKitchen('Ужин', ['Салат Витаминный', "Котлета куриная", "Рис отварной", " Хлеб"], ['100гр', '120гр', '200гр', '70гр'], dinner)
+											.tab-pane.fade#menu-wed-week2(role="tabpanel" aria-labelledby="tab-wed")
+												+menuKitchen('Завтрак', ['Чай ', "Яйцо в смятку ", "Булочка с сахаром", "Кофе"], ['100гр', '200гр', '300гр', '400гр'], breakfast)
+												+menuKitchen('Обед', ['Салат Оливье', "Рыба под-маринадом", "Картофельное пюре", "Суп-лапша куриная", "Компот фруктовый"], ['1100гр', '400гр', '200гр', '425гр', '200мл'], lunch)
+												+menuKitchen('Ужин', ['Салат Витаминный', "Котлета куриная", "Рис отварной", " Хлеб"], ['100гр', '120гр', '200гр', '70гр'], dinner)
+											.tab-pane.fade#menu-thu-week2(role="tabpanel" aria-labelledby="tab-thu")
+												+menuKitchen('Завтрак', ['Салатик из фруктов ', "Яйцо отварное ", "Булочка с сахаром", "Кофе"], ['100гр', '200гр', '300гр', '400гр'], breakfast)
+												+menuKitchen('Обед', ['Салат Обычный', "Рыба под-маринадом", "Картофельное пюре", "Суп-лапша куриная", "Компот фруктовый"], ['1100гр', '400гр', '200гр', '425гр', '200мл'], lunch)
+												+menuKitchen('Ужин', ['Салат Витаминный', "Котлета куриная", "Рис отварной", " Хлеб"], ['100гр', '120гр', '200гр', '70гр'], dinner)
+											.tab-pane.fade#menu-fri-week2(role="tabpanel" aria-labelledby="tab-fri")
+												+menuKitchen('Завтрак', ['Голодаем ', "Яйцо отварное ", "Булочка с сахаром", "Кофе"], ['100гр', '200гр', '300гр', '400гр'], breakfast)
+												+menuKitchen('Обед', ['Суп лапша', "Рыба под-маринадом", "Картофельное пюре", "Суп-лапша куриная", "Компот фруктовый"], ['1100гр', '400гр', '200гр', '425гр', '200мл'], lunch)
+												+menuKitchen('Ужин', ['Салат Витаминный', "Котлета куриная", "Рис отварной", " Хлеб"], ['100гр', '120гр', '200гр', '70гр'], dinner)
+											.tab-pane.fade#menu-sat-week2(role="tabpanel" aria-labelledby="tab-sat")
+												+menuKitchen('Завтрак', ['Тортик ', "Яйцо отварное ", "Булочка с сахаром", "Кофе"], ['100гр', '200гр', '300гр', '400гр'], breakfast)
+												+menuKitchen('Обед', ['Салат Оливье', "Рыба под-маринадом", "Картофельное пюре", "Суп-лапша куриная", "Компот фруктовый"], ['1100гр', '400гр', '200гр', '425гр', '200мл'], lunch)
+												+menuKitchen('Ужин', ['Салат Витаминный', "Котлета куриная", "Рис отварной", " Хлеб"], ['100гр', '120гр', '200гр', '70гр'], dinner)
+											.tab-pane.fade#menu-sun-week2(role="tabpanel" aria-labelledby="tab-sun")
+												+menuKitchen('Завтрак', ['Паста балоньезе', "Яйцо отварное ", "Булочка с сахаром", "Кофе"], ['100гр', '200гр', '300гр', '400гр'], breakfast)
+												+menuKitchen('Обед', ['Суп лапша', "Рыба под-маринадом", "Картофельное пюре", "Суп-лапша куриная", "Компот фруктовый"], ['1100гр', '400гр', '200гр', '425гр', '200мл'], breakfast)
+												+menuKitchen('Ужин', ['Салат Витаминный', "Котлета куриная", "Рис отварной", " Хлеб"], ['100гр', '120гр', '200гр', '70гр'], dinner)
+							.tab-pane.fade#menu-week3(role="tabpanel" aria-labelledby="tab-week3")
+										.kitchen-menu__content.tab-content
+											.tab-pane.fade.show.active#menu-mon-week3(role="tabpanel" aria-labelledby="tab-mon")
+												+menuKitchen('Завтрак', ['запеканка рисовая', "яицо отварное", "Булочка с сахаром", "Кофе"], ['100гр', '200гр', '300гр', '400гр'], breakfast)
+												+menuKitchen('Обед', ['Салат Оливье', "Рыба под-маринадом", "Картофельное пюре", "Суп-лапша куриная", "Компот фруктовый"], ['1100гр', '400гр', '200гр', '425гр', '200мл'], lunch)
+												+menuKitchen('Ужин', ['Салат Витаминный', "Котлета куриная", "Рис отварной", " Хлеб"], ['100гр', '120гр', '200гр', '70гр'], dinner)
+											.tab-pane.fade#menu-tue-week3(role="tabpanel" aria-labelledby="tab-tue")
+												+menuKitchen('Завтрак', ['Каша манная ', "Мандарин ", "Булочка с сахаром", "Кофе"], ['100гр', '200гр', '300гр', '400гр'], breakfast)
+												+menuKitchen('Обед', ['Салат для избранных', "Рыба под-маринадом", "Картофельное пюре", "Суп-лапша куриная", "Компот фруктовый"], ['1100гр', '400гр', '200гр', '425гр', '200мл'], lunch)
+												+menuKitchen('Ужин', ['Салат Витаминный', "Котлета куриная", "Рис отварной", " Хлеб"], ['100гр', '120гр', '200гр', '70гр'], dinner)
+											.tab-pane.fade#menu-wed-week3(role="tabpanel" aria-labelledby="tab-wed")
+												+menuKitchen('Завтрак', ['Чай ', "Яйцо в смятку ", "Булочка с сахаром", "Кофе"], ['100гр', '200гр', '300гр', '400гр'], breakfast)
+												+menuKitchen('Обед', ['Салат Оливье', "Рыба под-маринадом", "Картофельное пюре", "Суп-лапша куриная", "Компот фруктовый"], ['1100гр', '400гр', '200гр', '425гр', '200мл'], lunch)
+												+menuKitchen('Ужин', ['Салат Витаминный', "Котлета куриная", "Рис отварной", " Хлеб"], ['100гр', '120гр', '200гр', '70гр'], dinner)
+											.tab-pane.fade#menu-thu-week3(role="tabpanel" aria-labelledby="tab-thu")
+												+menuKitchen('Завтрак', ['Салатик из фруктов ', "Яйцо отварное ", "Булочка с сахаром", "Кофе"], ['100гр', '200гр', '300гр', '400гр'], breakfast)
+												+menuKitchen('Обед', ['Салат Обычный', "Рыба под-маринадом", "Картофельное пюре", "Суп-лапша куриная", "Компот фруктовый"], ['1100гр', '400гр', '200гр', '425гр', '200мл'], lunch)
+												+menuKitchen('Ужин', ['Салат Витаминный', "Котлета куриная", "Рис отварной", " Хлеб"], ['100гр', '120гр', '200гр', '70гр'], dinner)
+											.tab-pane.fade#menu-fri-week3(role="tabpanel" aria-labelledby="tab-fri")
+												+menuKitchen('Завтрак', ['Голодаем ', "Яйцо отварное ", "Булочка с сахаром", "Кофе"], ['100гр', '200гр', '300гр', '400гр'], breakfast)
+												+menuKitchen('Обед', ['Суп лапша', "Рыба под-маринадом", "Картофельное пюре", "Суп-лапша куриная", "Компот фруктовый"], ['1100гр', '400гр', '200гр', '425гр', '200мл'], lunch)
+												+menuKitchen('Ужин', ['Салат Витаминный', "Котлета куриная", "Рис отварной", " Хлеб"], ['100гр', '120гр', '200гр', '70гр'], dinner)
+											.tab-pane.fade#menu-sat-week3(role="tabpanel" aria-labelledby="tab-sat")
+												+menuKitchen('Завтрак', ['Тортик ', "Яйцо отварное ", "Булочка с сахаром", "Кофе"], ['100гр', '200гр', '300гр', '400гр'], breakfast)
+												+menuKitchen('Обед', ['Салат Оливье', "Рыба под-маринадом", "Картофельное пюре", "Суп-лапша куриная", "Компот фруктовый"], ['1100гр', '400гр', '200гр', '425гр', '200мл'], lunch)
+												+menuKitchen('Ужин', ['Салат Витаминный', "Котлета куриная", "Рис отварной", " Хлеб"], ['100гр', '120гр', '200гр', '70гр'], dinner)
+											.tab-pane.fade#menu-sun-week3(role="tabpanel" aria-labelledby="tab-sun")
+												+menuKitchen('Завтрак', ['Паста балоньезе', "Яйцо отварное ", "Булочка с сахаром", "Кофе"], ['100гр', '200гр', '300гр', '400гр'], breakfast)
+												+menuKitchen('Обед', ['Суп лапша', "Рыба под-маринадом", "Картофельное пюре", "Суп-лапша куриная", "Компот фруктовый"], ['1100гр', '400гр', '200гр', '425гр', '200мл'], lunch)
+												+menuKitchen('Ужин', ['Салат Витаминный', "Котлета куриная", "Рис отварной", " Хлеб"], ['100гр', '120гр', '200гр', '70гр'], dinner)
+							.tab-pane.fade#menu-week4(role="tabpanel" aria-labelledby="tab-week4")
+										.kitchen-menu__content.tab-content
+											.tab-pane.fade.show.active#menu-mon-week4(role="tabpanel" aria-labelledby="tab-mon")
+												+menuKitchen('Завтрак', ['запеканка рисовая', "яицо отварное", "Булочка с сахаром", "Кофе"], ['100гр', '200гр', '300гр', '400гр'], breakfast)
+												+menuKitchen('Обед', ['Салат Оливье', "Рыба под-маринадом", "Картофельное пюре", "Суп-лапша куриная", "Компот фруктовый"], ['1100гр', '400гр', '200гр', '425гр', '200мл'], lunch)
+												+menuKitchen('Ужин', ['Салат Витаминный', "Котлета куриная", "Рис отварной", " Хлеб"], ['100гр', '120гр', '200гр', '70гр'], dinner)
+											.tab-pane.fade#menu-tue-week4(role="tabpanel" aria-labelledby="tab-tue")
+												+menuKitchen('Завтрак', ['Каша манная ', "Мандарин ", "Булочка с сахаром", "Кофе"], ['100гр', '200гр', '300гр', '400гр'], breakfast)
+												+menuKitchen('Обед', ['Салат для избранных', "Рыба под-маринадом", "Картофельное пюре", "Суп-лапша куриная", "Компот фруктовый"], ['1100гр', '400гр', '200гр', '425гр', '200мл'], lunch)
+												+menuKitchen('Ужин', ['Салат Витаминный', "Котлета куриная", "Рис отварной", " Хлеб"], ['100гр', '120гр', '200гр', '70гр'], dinner)
+											.tab-pane.fade#menu-wed-week4(role="tabpanel" aria-labelledby="tab-wed")
+												+menuKitchen('Завтрак', ['Чай ', "Яйцо в смятку ", "Булочка с сахаром", "Кофе"], ['100гр', '200гр', '300гр', '400гр'], breakfast)
+												+menuKitchen('Обед', ['Салат Оливье', "Рыба под-маринадом", "Картофельное пюре", "Суп-лапша куриная", "Компот фруктовый"], ['1100гр', '400гр', '200гр', '425гр', '200мл'], lunch)
+												+menuKitchen('Ужин', ['Салат Витаминный', "Котлета куриная", "Рис отварной", " Хлеб"], ['100гр', '120гр', '200гр', '70гр'], dinner)
+											.tab-pane.fade#menu-thu-week4(role="tabpanel" aria-labelledby="tab-thu")
+												+menuKitchen('Завтрак', ['Салатик из фруктов ', "Яйцо отварное ", "Булочка с сахаром", "Кофе"], ['100гр', '200гр', '300гр', '400гр'], breakfast)
+												+menuKitchen('Обед', ['Салат Обычный', "Рыба под-маринадом", "Картофельное пюре", "Суп-лапша куриная", "Компот фруктовый"], ['1100гр', '400гр', '200гр', '425гр', '200мл'], lunch)
+												+menuKitchen('Ужин', ['Салат Витаминный', "Котлета куриная", "Рис отварной", " Хлеб"], ['100гр', '120гр', '200гр', '70гр'], dinner)
+											.tab-pane.fade#menu-fri-week4(role="tabpanel" aria-labelledby="tab-fri")
+												+menuKitchen('Завтрак', ['Голодаем ', "Яйцо отварное ", "Булочка с сахаром", "Кофе"], ['100гр', '200гр', '300гр', '400гр'], breakfast)
+												+menuKitchen('Обед', ['Суп лапша', "Рыба под-маринадом", "Картофельное пюре", "Суп-лапша куриная", "Компот фруктовый"], ['1100гр', '400гр', '200гр', '425гр', '200мл'], lunch)
+												+menuKitchen('Ужин', ['Салат Витаминный', "Котлета куриная", "Рис отварной", " Хлеб"], ['100гр', '120гр', '200гр', '70гр'], dinner)
+											.tab-pane.fade#menu-sat-week4(role="tabpanel" aria-labelledby="tab-sat")
+												+menuKitchen('Завтрак', ['Тортик ', "Яйцо отварное ", "Булочка с сахаром", "Кофе"], ['100гр', '200гр', '300гр', '400гр'], breakfast)
+												+menuKitchen('Обед', ['Салат Оливье', "Рыба под-маринадом", "Картофельное пюре", "Суп-лапша куриная", "Компот фруктовый"], ['1100гр', '400гр', '200гр', '425гр', '200мл'], lunch)
+												+menuKitchen('Ужин', ['Салат Витаминный', "Котлета куриная", "Рис отварной", " Хлеб"], ['100гр', '120гр', '200гр', '70гр'], dinner)
+											.tab-pane.fade#menu-sun-week4(role="tabpanel" aria-labelledby="tab-sun")
+												+menuKitchen('Завтрак', ['Паста балоньезе', "Яйцо отварное ", "Булочка с сахаром", "Кофе"], ['100гр', '200гр', '300гр', '400гр'], breakfast)
+												+menuKitchen('Обед', ['Суп лапша', "Рыба под-маринадом", "Картофельное пюре", "Суп-лапша куриная", "Компот фруктовый"], ['1100гр', '400гр', '200гр', '425гр', '200мл'], lunch)
+												+menuKitchen('Ужин', ['Салат Витаминный', "Котлета куриная", "Рис отварной", " Хлеб"], ['100гр', '120гр', '200гр', '70гр'], dinner)

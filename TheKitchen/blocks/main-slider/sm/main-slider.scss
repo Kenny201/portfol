@@ -1,0 +1,18 @@
+@include media-breakpoint-up(sm) {
+    .main-slider {
+        .main-slider__document {
+            flex-wrap: nowrap;
+        }
+        .document__item-block{
+            justify-content: flex-start;
+         
+        }
+        .document__item-link {
+            &:before {
+                left: 0px;
+                width: 44px;
+            }
+        }
+        
+}
+}

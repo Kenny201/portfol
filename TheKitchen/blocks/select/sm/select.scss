@@ -1,0 +1,29 @@
+@include media-breakpoint-up(sm) {
+    .select {
+
+       
+
+
+        &__item {
+            &:nth-child(2) {
+
+                .select__item-desc {
+                    text-align: center;
+                }
+
+            }
+        }
+        .select-decor__img{
+            width: 562px;
+            height: 503px;
+            position: absolute;
+            overflow: hidden;
+            bottom: -13%;
+            &:after{
+                background-size: 190%;
+                bottom: -6%;
+                background-position: -195px -260px;
+            }
+        } 
+    }
+}

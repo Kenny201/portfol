@@ -1,0 +1,14 @@
+@include media-breakpoint-up(xxl) {
+    .interview-form {
+        &__content {
+            &:before {
+                right: 76%;
+                bottom: -20%;
+                width: 91%;
+                height: 121%;
+                background-position: 0 0;
+                background-size: 77%;
+            }
+        }
+    }
+}

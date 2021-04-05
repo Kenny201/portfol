@@ -1,0 +1,12 @@
+@include media-breakpoint-up(xxl) {
+    .reviews {
+        .container {
+            max-width: 1419px;
+            padding: 0;
+        }
+
+        &__image {
+            padding: 0 60px;
+        }
+    }
+}

@@ -1,0 +1,26 @@
+@include media-breakpoint-up(sm) {
+    .interview-form {
+        &__content {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &_inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        &_desc {
+            margin: 0 0 0 20px;
+        }
+        .interview-form_button .button-calculate {
+            margin: 0 ;
+            width: 60%;
+        }
+        
+        &_title {
+            text-align: center;
+        }
+    }
+}

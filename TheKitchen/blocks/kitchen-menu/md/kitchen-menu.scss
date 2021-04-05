@@ -1,0 +1,85 @@
+@include media-breakpoint-up(md) {
+    .kitchen-menu {
+        .kitchen-menu-decor__img{
+            position: absolute;
+            width: 545px;
+            height: 545px;
+            top: -300px;
+            right: 0;
+            overflow: hidden;
+            &:after{
+            content: '';
+            position: absolute;
+            background: url("/decor-image/decore-8.png") no-repeat 185px 0 ;
+            background-size: 100%;
+            width: 100%;
+            height: 100%;
+        }
+        }
+        .container {
+            max-width: 100%;
+        }
+
+        &__day-weeks {
+            display: block;
+            margin: 0 0 10px 0;
+        }
+
+        &__day-nav {
+            margin: 0 0 20px 0;
+        }
+
+        .item {
+            padding: 40px 15px 20px 15px;
+            font-size: 16px;
+        }
+
+        .kitchen-menu__content .item .menu-image img {
+            width: 100%;
+        }
+
+        .nav-link {
+            padding: 10px 26px;
+        }
+
+        .tab-pane.active {
+            display: flex;
+            justify-content: space-between;
+            gap: 0 10px;
+        }
+
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+
+            &__wrap {
+                min-height: 300px;
+            }
+
+            span:nth-child(2) {
+                text-align: right
+            }
+
+            span {
+                width: 50%;
+            }
+
+            &:not(:nth-child(1)) {
+                padding: 10px 0 0;
+            }
+        }
+
+        .menu-item__wrap {
+            min-height: 304px;
+        }
+
+        .kitchen-menu__tabs {
+            padding: 17px 20px;
+            background-color: #FEF7EC;
+        }
+
+        .glide__arrows {
+            display: none;
+        }
+    }
+}

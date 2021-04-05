@@ -1,0 +1,66 @@
+@include media-breakpoint-up(lg) {
+    .packages {
+        .package-decor__img {
+            position: absolute;
+            top: -160px;
+            right: -80px;
+            overflow: hidden;
+            width: 250px;
+            height: 250px;
+
+            &:before {
+                background: url("/decor-image/decore-10.png") no-repeat 0px 0px;
+                background-size: 100%;
+            }
+        }
+
+        .container {
+            max-width: 856px;
+            padding-right:15px;
+
+        }
+
+        &__content {
+            position: relative;
+            margin: 150px 0 0 0;
+        }
+
+        &__item-heading {
+            height: 150px;
+        }
+
+        &__item {
+            padding: 49px 15px 50px;
+        }
+
+        &__item:nth-child(1) .packages__item-title {
+            padding: 0 0 0 2%;
+        }
+
+        &__item:nth-child(2) .packages__item-title {
+            padding: 0 0 0 5%;
+        }
+
+        &__item-button .button-calculate {
+            padding: 1em 1.5em;
+        }
+
+        &__item-button {
+            margin: 0;
+        }
+
+        .glide__slides {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .glide__track,
+        .glide__slides {
+            overflow: visible;
+        }
+
+        .glide__slide {
+            width: 23%;
+        }
+    }
+}
