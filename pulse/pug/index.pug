@@ -1,0 +1,28 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+        link(rel="stylesheet", href="css/style.min.css")
+    body
+        .first-screen 
+            .container
+                include ../blocks/header/header.pug
+                include ../blocks/first-screen/first-screen.pug
+        include ../blocks/advantage/advantage.pug
+        include ../blocks/consult/consult.pug
+        include ../blocks/slider/slider.pug
+        include ../blocks/catalog/catalog.pug
+        include ../blocks/reviews/reviews.pug
+        include ../blocks/footer/footer.pug
+        include ../blocks/modal/modal.pug
+        script(src="../js/jquery.min.js") 
+        script(src="../js/slick.min.js") 
+        script(src="../js/bootstrap.min.js")
+        script(src="../js/jquery.validate.min.js")
+        script(src="../js/jquery.maskedinput.js")
+        script(src="../js/main.js") 
