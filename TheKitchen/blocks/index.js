@@ -220,7 +220,7 @@ $(function() {
 
     $('.button-play').magnificPopup({
         items: {
-            src: 'https://www.youtube.com/watch?v=7eo8XpT4CmM'
+            src: 'https://www.youtube.com/watch?v=5jTDpz7OXD4'
         },
         type: 'iframe',
         iframe: {
