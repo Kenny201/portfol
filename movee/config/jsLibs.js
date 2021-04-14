@@ -3,10 +3,11 @@ const { params,  plugins : $ } = require("./variables");
 
 
 module.exports = () =>
-    $.gulp.src(params.jsLibs)
+    $.gulp.src(params.jsLibs    )
         .pipe($.concat({
             path: 'libs.js'
         }))
+        
         .pipe($.gulp.dest(params.out))
         .pipe($.replace(/("use\sstrict";\s+)?\$\(function\s\(\)\s\{\}\);/g, ""))
         .pipe($.babel({

@@ -1,0 +1,26 @@
+@include media-breakpoint-up(md) {
+  .header {
+    &__logo-text {
+      font-size: 1.875rem;
+    }
+    &__menu{
+      flex-direction: row;
+      width: 50%;
+      right:0;
+      top:0;
+      font-size: 16px;
+      height: auto;
+      position: relative;
+    }
+    &__menu-toggle{
+      display: none;
+    }
+    &__contacts {
+      display: block;
+      font-weight: 600;
+    }
+    &__contacts-tel{
+      border-bottom: 1px solid #333333;
+    }
+  }
+}

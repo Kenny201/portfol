@@ -1,0 +1,15 @@
+@include media-breakpoint-up(xl) {
+  .header {
+    &__menu{
+      
+      font-size: 18px;
+
+    }
+    &__contacts{
+      font-size: 24px;
+    
+     
+    }
+  
+  }
+}
