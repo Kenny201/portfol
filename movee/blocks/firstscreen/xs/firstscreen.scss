@@ -1,5 +1,5 @@
 @include media-breakpoint-up(xs) {
-  .firstscreen__main {
+  .firstscreen {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -8,17 +8,17 @@
       color: #fff;
     }
   }
-  .firstscreen__main-title{
+  .firstscreen-title{
     font-size: 1.75rem;
     text-align: center;
     font-weight: 700;
     width: 80%;
   } 
-  .firstscreen__main-subtitle{
+  .firstscreen-subtitle{
     font-size: 1.125rem;
     font-weight: 600;
   } 
-  .firstscreen__main-img{
+  .firstscreen-img{
       width: 100%;
       text-align: center;
       img{

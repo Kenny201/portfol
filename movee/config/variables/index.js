@@ -14,7 +14,7 @@ module.exports = {
         html: ["pug/*.pug", "blocks/**/*.pug"],
         blocksName : [
             "header",
-            "firstscreen__main",
+            "firstscreen",
             "button-main",
         ],
         js: [],
