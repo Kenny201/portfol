@@ -7,26 +7,25 @@
     .b-button--style{
       color: #fff;
     }
-  }
-  .firstscreen-title{
-    font-size: 1.75rem;
-    text-align: center;
-    font-weight: 700;
-    width: 80%;
-  } 
-  .firstscreen-subtitle{
+    &__title{
+      font-size: 1.75rem;
+      text-align: center;
+      font-weight: 700;
+      width: 80%;
+    }
+    &__subtitle{
     font-size: 1.125rem;
     font-weight: 600;
-  } 
-  .firstscreen-img{
+    } 
+    &__img{
       width: 100%;
       text-align: center;
       img{
         width: 90%;
         position: relative;
       }
+    }
   }
-  
 }
 
 @include media-breakpoint-down(xs) {
