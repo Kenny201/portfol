@@ -10,15 +10,14 @@ $(function() {
 
     /*-------------------SLIDERS----------------*/
 
-    if (window.screen.width <= 768 && window.innerWidth <= 768) {
+    if (window.screen.width <= 768) {
         let glide = new Glide('.advantages', {
             type: 'slider',
             focusAt: 'center',
         }).mount();
-    } else {
-        let glide = undefined;
-    }
-    if (window.screen.width < 768 && window.innerWidth < 768) {
+    };
+
+    if (window.screen.width <= 768) {
         let glide = new Glide('.kitchen-menu__day-nav', {
             type: 'slider',
             focusAt: 'center',
@@ -32,20 +31,16 @@ $(function() {
             let glideActive = document.querySelector('.kitchen-menu__tabs .glide__slide--active > button');
             glideActive.classList.remove('active');
         });
-    } else {
-        let glide = undefined;
-    }
-    if (window.screen.width >= 768 && window.innerWidth >= 768 ) {
+    };
+
+    if (window.screen.width >= 768 && window.screen.width <= 1024 ) {
         let glide = new Glide('.packages__items-wrap', {
             type: 'slider',
             hoverpause: true,
             perView: 3
         }).mount();
-    } else if (window.screen.width >= 1024 && window.innerWidth >= 1024) {
-        let glide = undefined;
-    } else if (window.screen.width <= 768 && window.innerWidth <= 768) {
-        let glide = undefined;
     }
+
     let glide = new Glide('.slider', {
         type: 'carousel',
         hoverpause: true,
@@ -65,7 +60,8 @@ $(function() {
             }
         }
     }).mount();
-    if (window.screen.width < 768 && window.innerWidth < 768) {
+
+    if (window.screen.width <= 768) {
         let glide = new Glide('.reviews__video', {
             type: 'carusel',
             hoverpause: true,
@@ -78,10 +74,9 @@ $(function() {
                 }
             }
         }).mount();
-    } else {
-        let glide = undefined;
-    }
-    if (window.screen.width < 768 && window.innerWidth < 768) {
+    };
+
+    if (window.screen.width <= 768) {
         let glide = new Glide('.faq__items', {
             type: 'slider',
             focusAt: 'center',
@@ -95,14 +90,14 @@ $(function() {
             let glideActive = document.querySelector('.faq__items  .glide__slide--active > button');
             glideActive.classList.remove('active');
         });
-    } else {
-        let glide = undefined;
-    }
+    };
+
     $('.faq__question').click(function() {
         $(this).siblings('.faq__answer').slideToggle();
         $(this).children('span').toggleClass('rotate-arrow');
     });
-    if (window.screen.width >= 768 && window.innerWidth >= 768) {
+    
+    if (window.screen.width >= 768) {
         var child = document.querySelector('.advantages');
         let parent = document.createElement("div");
         parent.classList.add('container');
