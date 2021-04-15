@@ -16,6 +16,7 @@ module.exports = {
             "header",
             "firstscreen",
             "button-main",
+            "process",
         ],
         js: [],
         jsLibs: [

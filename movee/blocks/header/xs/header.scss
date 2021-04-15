@@ -1,11 +1,12 @@
 @include media-breakpoint-up(xs) {
     .header {
         background-color: #FED100;
+
         &__wrap {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            padding: 30px 0 30px 0;
+            padding: 30px 0 25px 0;
         }
 
         &__logo-text {
@@ -13,7 +14,7 @@
             font-size: 1.5rem;
             font-weight: 600;
         }
-
+    
         &__menu {
             position: fixed;
             z-index: 99;
@@ -48,9 +49,8 @@
         }
 
         &__menu-toggle {
-            position: fixed;
+            position: relative;
             z-index: 999;
-            right: 15px;
             display: flex;
             flex-direction: column;
             justify-content: space-between;

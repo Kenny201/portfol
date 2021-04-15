@@ -1,0 +1,14 @@
+@include media-breakpoint-up(sm) {
+  .process {
+    &__items{
+      display: flex;
+      flex-direction: row;
+      justify-content:space-between;
+      flex-wrap: wrap;
+    }
+    &__item{
+
+      width: 50%;
+    }
+  }
+}
