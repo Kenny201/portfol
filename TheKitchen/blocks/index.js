@@ -41,7 +41,6 @@ $(function() {
             hoverpause: true,
             perView: 3
         }).mount();
-        glide.enable();
     } else if (window.screen.width >= 1024 && window.innerWidth >= 1024) {
         let glide = undefined;
     } else if (window.screen.width <= 768 && window.innerWidth <= 768) {
