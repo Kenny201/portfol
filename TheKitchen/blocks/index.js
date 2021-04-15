@@ -10,7 +10,7 @@ $(function() {
 
     /*-------------------SLIDERS----------------*/
 
-    if (window.screen.width <= 768) {
+    if (window.screen.width <= 768 && window.innerWidth <= 768) {
         let glide = new Glide('.advantages', {
             type: 'slider',
             focusAt: 'center',
@@ -18,7 +18,7 @@ $(function() {
     } else {
         let glide = undefined;
     }
-    if (window.screen.width < 768) {
+    if (window.screen.width < 768 && window.innerWidth < 768) {
         let glide = new Glide('.kitchen-menu__day-nav', {
             type: 'slider',
             focusAt: 'center',
@@ -35,16 +35,16 @@ $(function() {
     } else {
         let glide = undefined;
     }
-    if (window.screen.width >= 768 ) {
+    if (window.screen.width >= 768 && window.innerWidth >= 768 ) {
         let glide = new Glide('.packages__items-wrap', {
             type: 'slider',
             hoverpause: true,
             perView: 3
         }).mount();
         glide.enable();
-    } else if (window.screen.width >= 1024) {
+    } else if (window.screen.width >= 1024 && window.innerWidth >= 1024) {
         let glide = undefined;
-    } else if (window.screen.width <= 768) {
+    } else if (window.screen.width <= 768 && window.innerWidth <= 768) {
         let glide = undefined;
     }
     let glide = new Glide('.slider', {
@@ -66,7 +66,7 @@ $(function() {
             }
         }
     }).mount();
-    if (window.screen.width < 768) {
+    if (window.screen.width < 768 && window.innerWidth < 768) {
         let glide = new Glide('.reviews__video', {
             type: 'carusel',
             hoverpause: true,
@@ -82,7 +82,7 @@ $(function() {
     } else {
         let glide = undefined;
     }
-    if (window.screen.width < 768) {
+    if (window.screen.width < 768 && window.innerWidth < 768) {
         let glide = new Glide('.faq__items', {
             type: 'slider',
             focusAt: 'center',
@@ -103,7 +103,7 @@ $(function() {
         $(this).siblings('.faq__answer').slideToggle();
         $(this).children('span').toggleClass('rotate-arrow');
     });
-    if (window.screen.width >= 768) {
+    if (window.screen.width >= 768 && window.innerWidth >= 768) {
         var child = document.querySelector('.advantages');
         let parent = document.createElement("div");
         parent.classList.add('container');
