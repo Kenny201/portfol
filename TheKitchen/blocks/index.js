@@ -190,8 +190,6 @@ $(function() {
             $(".progress-wrap").css("width", "100%");
             $(".msf-nav-button[data-type=back] ").css("display", "none");
             $(".msf-navigation").css("margin", "0");
-        } else if (data.currentIndex == data.totalSteps - 2) {
-            $(".progress-wrap").insertAfter(".msf-navigation");
         }
     });
     $(".progress-wrap").insertAfter(".msf-navigation");
