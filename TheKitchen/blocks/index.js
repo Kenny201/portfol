@@ -10,7 +10,7 @@ $(function() {
 
     /*-------------------SLIDERS----------------*/
 
-    if (window.screen.width <= 768 && window.innerWidth <= 768) {
+    if (window.screen.width <= 768) {
         let glide = new Glide('.advantages', {
             type: 'slider',
             focusAt: 'center',
@@ -18,7 +18,7 @@ $(function() {
     } else {
         let glide = undefined;
     }
-    if (window.screen.width < 768 && window.innerWidth < 768) {
+    if (window.screen.width < 768) {
         let glide = new Glide('.kitchen-menu__day-nav', {
             type: 'slider',
             focusAt: 'center',
@@ -35,7 +35,7 @@ $(function() {
     } else {
         let glide = undefined;
     }
-    if (window.screen.width >= 768 && window.screen.width <= 1024) {
+    if (window.screen.width >= 768 ) {
         let glide = new Glide('.packages__items-wrap', {
             type: 'slider',
             hoverpause: true,
@@ -66,7 +66,7 @@ $(function() {
             }
         }
     }).mount();
-    if (window.screen.width < 768 && window.innerWidth < 768) {
+    if (window.screen.width < 768) {
         let glide = new Glide('.reviews__video', {
             type: 'carusel',
             hoverpause: true,
@@ -82,7 +82,7 @@ $(function() {
     } else {
         let glide = undefined;
     }
-    if (window.screen.width < 768 && window.innerWidth < 768) {
+    if (window.screen.width < 768) {
         let glide = new Glide('.faq__items', {
             type: 'slider',
             focusAt: 'center',
@@ -103,7 +103,7 @@ $(function() {
         $(this).siblings('.faq__answer').slideToggle();
         $(this).children('span').toggleClass('rotate-arrow');
     });
-    if (window.screen.width >= 768 && window.innerWidth >= 768) {
+    if (window.screen.width >= 768) {
         var child = document.querySelector('.advantages');
         let parent = document.createElement("div");
         parent.classList.add('container');
@@ -181,15 +181,15 @@ $(function() {
             $(".progress-bar").css("width", progress + "%").attr('aria-valuenow', progress);
             $('.sr-only').html('<span class="progress-text"> Пройдено: ' + '<span class="progress-procent">' + (progress) + '%' + '</span> </span>');
             $(".progress-wrap").insertBefore(".msf-content");
-            if (window.screen.width <= 576 && window.innerWidth <= 576) {
-                $(".modal").css("padding", "25px 15px 110px");
-            } else {
-                $(".modal").css("padding", " 40px 35px");
-            }
             $(".modal").css("max-width", "600px");
             $(".progress-wrap").css("width", "100%");
             $(".msf-nav-button[data-type=back] ").css("display", "none");
             $(".msf-navigation").css("margin", "0");
+            if (window.screen.width <= 576) {
+                $(".modal").css("padding", "25px 15px 110px");
+            } else {
+                $(".modal").css("padding", " 40px 35px");
+            }
         }
     });
     $(".progress-wrap").insertAfter(".msf-navigation");
