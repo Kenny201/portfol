@@ -1,0 +1,84 @@
+@include media-breakpoint-up(md) {
+    .select {
+        &:after {
+            position: absolute;
+            bottom: -270px;
+            left: -165px;
+            width: 270px;
+            height: 270px;
+            content: '';
+            background: url("/decor-image/decore-4.png") no-repeat center;
+            background-size: 100%;
+        }
+
+        &__wrap-items {
+            gap: 1.5rem 1rem;
+        }
+
+        &__title {
+            padding: 0 0 30px 0;
+        }
+
+        &__item {
+            flex: 1 1 calc((100% / 2) - 1rem);
+            font-size: 20px;
+
+            &:nth-child(1) {
+                padding: 30px 30px 40px;
+
+                .select__item-desc {
+                    width: 70%;
+                    padding: 0;
+                }
+
+                &:after {
+                    top: 0px;
+                    left: 30px;
+                }
+            }
+
+            &:nth-child(2) {
+                padding: 20px 30px 40px;
+
+                .select__item-desc {
+                    padding: 20px 0 0 70px;
+                    text-align: left;
+                }
+
+                &:after {
+                    bottom: -5px;
+                    left: 65px;
+                }
+            }
+
+            &:nth-child(3) {
+                padding: 20px 45px 20px;
+
+                .select__item-desc {
+                    padding: 0 0 0 40px;
+                }
+
+                &:after {
+                    top: -20px;
+                    left: 55px;
+                }
+            }
+
+            &:nth-child(4) {
+                padding: 10px 53px 31px;
+                .select__item-img {
+                    width: 99%;
+                }
+                .select__item-desc {
+                    padding: 10px 0 0 40px;
+                }
+
+                &:after {
+                    bottom: -10px;
+                    left: 85px;
+                }
+            }
+        }
+
+    }
+}

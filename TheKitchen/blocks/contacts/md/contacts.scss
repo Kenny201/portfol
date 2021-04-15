@@ -1,0 +1,34 @@
+@include media-breakpoint-up(md) {
+    .contacts {
+        margin: 110px 0 0 0;
+        padding: 65px 15px;
+
+        .container {
+            max-width: 100%;
+        }
+        .contacts-decor__img{
+            top: -200px ;
+            right: -15px;
+            width: 315px;
+            height: 270px;
+            &:after{
+              transform: rotate(0deg);
+              right: -75px;
+            }
+           
+        }
+        &__block {
+            padding: 80px 40px;
+                &:after{
+                    top: -123px;
+                    right: -92px;
+                    width: 265px;
+                    height: 225px;
+                    background-size: 109%;
+                    transform: rotate(0deg);
+                    
+                }
+    
+        }
+    }
+}

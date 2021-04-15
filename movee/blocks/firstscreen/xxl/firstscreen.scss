@@ -1,0 +1,24 @@
+@include media-breakpoint-up(xxl) {
+  .firstscreen {
+    background: url("images/auto.png") no-repeat 95% 25%;
+    background-color: #FED100;
+    &__title{
+
+      font-size: 4.375rem;
+      line-height: 80px;
+    }
+    &__subtitle{
+      margin: 10px 0 0 0;
+      font-size: 1.8rem;
+    }
+    .button-main{
+      width: 25%;
+      margin: 80px 0 0;
+    }
+    &__img{
+      width: 390px;
+      top: 3px;
+      left: 45%;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+@include media-breakpoint-up(xl) {
+    .call-form {
+        &__image {
+            right: -400px;
+        }
+
+        &__button {
+            width: 40%;
+        }
+
+        &__tel {
+            width: 70%;
+        }
+    }
+}

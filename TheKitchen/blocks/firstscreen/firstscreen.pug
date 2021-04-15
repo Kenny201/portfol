@@ -1,0 +1,38 @@
+.firstscreen
+    .container 
+            .firstscreen-circle 
+            .firstscreen__title-wrap
+                .firstscreen__title 
+                    h1.firstscreen__title--style Доставка сытных 
+                        | 
+                        span.color-text завтраков, обедов 
+                        | и 
+                        span.color-text ужинов<wbr> 
+                        | для строителей
+                .firstscreen__button.btn-overlay
+                    include ../button-calculate/button-calculate 
+                        span Рассчитать стоимость 
+    .advantages.glide
+        .glide__track(data-glide-el="track")
+            ul.glide__slides
+                li.glide__slide 
+                    .advantages__item
+                        .advantages__img
+                            img(src="images/advantages-item01.png", alt="от 450р")
+                        .advantages__text    Накормим комплексом “завтрак + обед + ужин от 450 ₽”
+                li.glide__slide     
+                    .advantages__item 
+                        .advantages__img
+                            img(src="images/advantages-item02.png", alt="строители")
+                        .advantages__text   Нашими порциями наедаются строители и рабочие
+                li.glide__slide 
+                    .advantages__item 
+                        .advantages__img
+                            img(src="images/advantages-item03.png", alt="бригады")
+                        .advantages__text  Работаем с небольшими бригадами, и крупными объектами до 1 000 человек
+                li.glide__slide 
+                    .advantages__item 
+                        .advantages__img
+                            img(src="images/advantages-item04.png", alt="бюджет")
+                        .advantages__text  Учтем бюджет, расположение объекта и предпочтительное меню
+    

@@ -1,0 +1,50 @@
+@include media-breakpoint-up(sm) {
+
+    .reviews {
+        .container {
+            max-width: 100%;
+            padding: 0;
+        }   
+
+        &__wrap {
+            padding: 53px 40px;
+        }
+
+        &__content {
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            gap: 0px 10px;
+        }
+
+        &__content-left {
+            width: 50%;
+        }
+
+        &__content-right {
+            width: 50%;
+        }
+        &__clients {
+           
+            padding: 0 0;
+        }
+        &__subtitle,
+        &__title {
+            padding: 0;
+        }
+
+
+        &__video {
+            margin: 40px 0 0 0;
+            padding: 0;
+        }
+
+        &__video-item {
+            flex-shrink: 1;
+
+        }
+        .glide__slides, .glide__track{
+            margin: 0 -40px 0 0;
+        }
+    }
+}

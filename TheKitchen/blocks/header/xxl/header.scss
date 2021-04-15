@@ -1,0 +1,12 @@
+@include media-breakpoint-up(xxl) {
+    .header {
+        &__tel {
+            align-self: center;
+            justify-content: flex-end;
+
+            &:before {
+                left: 70px;
+            }
+        }
+    }
+}

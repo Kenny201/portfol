@@ -1,0 +1,48 @@
+@include media-breakpoint-up(lg) {
+  .firstscreen {
+    background: url("images/auto.png") no-repeat 140% 25%;
+    background-size: 500px 300px ; 
+    background-color: #FED100;
+    &__title{
+      line-height: 40px;
+      font-size: 2.5rem;
+    }
+    &__img{
+      position: absolute;
+      width: 300px;
+      top: -11px;
+      right:95px;
+     }
+     &__advnt-item{
+      padding: 0 0 0 55px;
+      font-size: 1rem;
+      &:nth-child(1){
+        &:before{
+         
+          width: 45px;
+          height: 100%;
+          background-size: 100%;
+        }
+      }
+      &:nth-child(2){
+        &:before{
+     
+          width: 40px;
+
+        }
+      
+      }
+      &:nth-child(3){
+        &:before{
+    
+
+          width: 45px;
+
+        }
+      }
+    }
+    .button-main{
+      width: 30%;
+    }
+  }
+}

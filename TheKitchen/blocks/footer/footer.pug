@@ -1,0 +1,27 @@
+mixin itemMenu()
+        a.footer__nav-link(href='#select') Почему мы ? 
+        a.footer__nav-link(href='#packages') Пакеты
+        a.footer__nav-link(href='#kitchen-menu') Меню
+        a.footer__nav-link(href='#faq') FAQ 
+        a.footer__nav-link(href='#contacts') Контакты
+footer.footer
+    .container
+            .row
+                .footer__wrap
+                    .footer__inner
+                        .footer__logo__wrap
+                            .footer__logo.logo
+                                .footer__logo-text  the 
+                                .footer__logo-text.logo-color кухня
+                                .footer__logo-text оператор питания 
+                        .footer__nav-inner.col-lg-9.col-xl-10.col-xxl-10
+                                nav.footer__nav.desktop-menu.col-lg-10.col-xl-7.col-xxl-7
+                                    +itemMenu()  
+                                .footer__tel-inner.col-xl-10.col-xxl-11
+                                    .footer__politic 
+                                        a(href="#") Политика конфидециальности 
+                                    .footer__tel
+                                        a(href="tel:+79457542762") +7 (945)754 2762
+                                     
+                    nav.footer__nav.small-menu.col-md-10
+                        +itemMenu()

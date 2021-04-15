@@ -1,0 +1,115 @@
+@include media-breakpoint-up(xs) {
+  .packages {
+    margin-top: 80px;
+    position: relative;
+    .package-decor__img{
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      right:-12px;
+      top:-96px;
+      overflow: hidden;
+      &:before{
+        content: '';
+        position: absolute;
+        background: url("/decor-image/decore-10.png") no-repeat  58px 0px;
+        width: 200px;
+        height: 200px;
+        background-size: cover;
+        z-index: 1;
+      }
+  }
+    &__item {
+      background-color: #FEF7EC;
+      padding: 59px 20px;
+      margin: 0 0 23px 0;
+      &_list-title{
+      	font-weight: bold;
+      
+      }
+   
+    }
+    &__item-title, &__item-subtitle{
+    	text-align: center;
+
+    }
+    &__item-title {
+    	font-size: 24px;
+    	margin-bottom: 40px;
+    	font-weight: bold;
+
+    }
+    &__item-subtitle{
+    	font-size: 18px;
+    	margin-bottom: 54px;
+
+    }
+    &__item-lists{
+    	display: flex;
+    	flex-wrap:wrap;
+    	justify-content: space-between;
+    	font-size: 18px;
+      ul{ padding-left: 0;}
+      li{
+        font-weight: normal;
+        margin: 0 0 0 1rem;
+
+        &::marker{
+          color: $orange;
+        }
+      }
+  	}
+    &__item-list1, &__item-list2{
+    	width: 50%;
+    }
+    &__item-title {
+    	position: relative;
+    	margin: 0 auto 41px auto;
+    	width: 200px;
+    	&:after{
+          position: absolute;
+          color:#F15A24;
+          opacity: 0.07;
+          top: -51px;
+    	    left: 24%;
+          font-weight: bold;
+          font-size: 96px;
+     }
+    }
+  
+    .packages__item:nth-child(1) .packages__item-title {
+      &:after{
+          content: '1';
+
+        }
+    }
+    .packages__item:nth-child(2) .packages__item-title {
+      &:after{
+          content: '2';
+
+        }
+    }
+    .packages__item:nth-child(3) .packages__item-title {
+      &:after{
+          content: '3';
+        
+        }
+    }
+    .packages__item:nth-child(4) .packages__item-title {
+      &:after{
+          content: '4';
+        }
+    }
+    .glide__slides{
+      overflow: visible;
+      display: block;
+    }
+    &__item-button{
+ 		display: flex;
+ 		justify-content: center;
+    	.button-calculate{
+    		padding: 1em 4em;
+    	}
+    }
+  }
+}

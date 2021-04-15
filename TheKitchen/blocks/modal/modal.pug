@@ -1,0 +1,70 @@
+.wrapper
+      .modal
+            .modal__close &times;
+            .body-content
+                  form.form-horizontal.msf.validate-form
+                        .msf-content
+                              .msf-view.overlay-city
+                                    .overlay-title.color-text Где находится ваш обьект? 
+                                    .form-group 
+                                          .form_radio
+                                                input(type="radio" name="city" checked value="Москва" )#city1
+                                                label(for="city1") Москва 
+                                          .form_radio
+                                                input( type="radio" name="city" value="Московская область" )#city2 
+                                                label(for="city2") Московская область
+                              .msf-view.overlay-people
+                                    .overlay-title.color-text Сколько человек будет питаться на обьекте?  
+                                    .form-group 
+                                          input(type="text"  name="people" placeholder="Например, 30 человек" )#name.form-control
+                              .msf-view.overlay-order
+                                    .overlay-title.color-text Вы уже заказывали питание с доставкой на объект?
+                                    .form-group 
+                                          .form_radio
+                                                input( type="radio" name="order" checked value="Да уже заказывали" )#order1
+                                                label(for="order1") Да уже заказывали 
+                                          .form_radio
+                                                input( type="radio" name="order" value="Нет раньше не заказывали " )#order2 
+                                                label(for="order2") Нет,  раньше не заказывали
+                              .msf-view.overlay-food
+                                    .overlay-title.color-text Какой тип питания предпочтительнее для вас?
+                                    .form-group 
+                                          .form_radio
+                                                input( type="radio" name="food" checked value="Только обед" )#food1
+                                                label(for="food1") Только обед
+                                          .form_radio
+                                                input( type="radio" name="food" value="Обед + ужин" )#food2 
+                                                label(for="food2") Обед + ужин
+                                          .form_radio
+                                                input( type="radio" name="food" value="Завтрак + обед + ужин" )#food3 
+                                                label(for="food3") Завтрак + обед + ужин
+                              .msf-view.overlay-push
+                                    .overlay-title.color-text Заполните форму и получите подробный расчет стоимости питания
+                                    .form-group.overlay-push__inner
+                                          input(type="tel" name="phone").input__tel
+                                          .overlay-push__check.check
+                                                      input(type="checkbox" name="checkModal2" id="checkModal2")
+                                                      label(for="checkModal2") Я согласен с 
+                                                            a(href="#").politics-link политикой конфиденциальности
+                        .navigation-wrap
+                              .msf-navigation.button__wrap
+                                    .button-false
+                                          svg(width="28" height="100%" viewBox="0 0 28 21" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                path(d="M26.6072 10.5723L1.10718 10.5723" stroke="#C4C4C4" stroke-linecap="round" stroke-linejoin="round")
+                                                path(d="M10.8572 20.3223L1.10718 10.5723L10.8572 0.822268" stroke="#C4C4C4" stroke-linecap="round" stroke-linejoin="round")
+                                    button.btn.btn-default.msf-nav-button(type="button" data-type="back")
+                                          svg(width="28" height="100%"  viewBox="0 0 28 21" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                                path(d="M26.6072 10.5723L1.10718 10.5723" stroke="#C4C4C4" stroke-linecap="round" stroke-linejoin="round")
+                                                path(d="M10.8572 20.3223L1.10718 10.5723L10.8572 0.822268" stroke="#C4C4C4" stroke-linecap="round" stroke-linejoin="round")
+                                    button.msf-nav-button.button-calculate(type='submit' data-type='submit') Отправить 
+                                    button.btn.btn-default.msf-nav-button.button-calculate(type="button" data-type="next") Далее
+                              .progress-wrap
+                                    span.sr-only 
+                                    .progress
+                                          .progress-bar.progress-bar-success.progress-bar-striped(role='progressbar', aria-valuenow='0', aria-valuemin='0', aria-valuemax='100', style='width: 0%')
+.thanks 
+      .modal
+            .thanks-modal__close &times;
+            .thanks__message Спасибо! Мы свяжемся с вами!
+            .thanks__image
+                  img(src="images/cook.png" alt="Повар")

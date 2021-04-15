@@ -1,0 +1,71 @@
+@include media-breakpoint-up(xl) {
+    .kitchen-menu {
+        .container {
+            max-width: 1140px;
+        }
+
+        &__navbar-wrap {
+            display: flex;
+            justify-content: space-between;
+            padding: 14px 0px;
+            background-color: #FEF7EC;
+        }
+
+        .tab-content {
+            padding: 0;
+        }
+
+        .tab-pane.active {
+            gap: 0 20px;
+        }
+
+        &__content {
+            width: 100%;
+
+            .item {
+                width: 48%;
+                margin: 20px 0 0;
+                padding: 40px 40px 20px;
+                font-size: 20px;
+                .menu-image img {
+                    width: 100%;
+                }
+            }
+        }
+
+        &__day-nav {
+            margin: 0;
+        }
+        &__day-weeks {
+            width: 50%;
+            margin: 0;
+            border-left: 1px solid #F15A24;
+        }
+
+        .menu-item {
+            &__wrap {
+                min-height: 330px;
+            }
+
+        }
+        
+        .glide {
+            width: 50%;
+        }
+
+        .nav-tabs {
+            border: none;
+        }
+
+        .nav-link {
+            padding: 7px 19px;
+        }
+
+        .kitchen-menu__tabs {
+            display: flex;
+            justify-content: space-between;
+            padding: 25px 14px;
+            background-color: #FEF7EC;
+        }
+    }
+}

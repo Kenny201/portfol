@@ -1,0 +1,88 @@
+@include media-breakpoint-up(xxl) {
+    .firstscreen {
+        background-position: 24em -2em,35em 5em;
+        @media (min-width: 1500px) {  
+                background-position: 33em -2em, 43em 6em;
+        }
+        @media (min-width: 1800px) {  
+            background-position: 38em -2em,50em 6em;;
+    }
+        .glide__slides {
+            display: grid;
+            margin: 85px 0 0 0;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 1fr;
+           
+        }
+        .advantages__text {
+            font-size: 18px;
+        }
+        @media screen and (min-width:1700px) {
+                .advantages{
+                    width: 108%;
+                }
+        .glide__slides {
+                
+                display: grid;
+                margin: 85px 0 0 0;
+                grid-template-columns: 1.8fr 1.8fr 1.8fr 2.0fr;
+                grid-template-rows: 1fr;
+            
+            }     
+        }
+        @media screen and (min-width:1800px) {
+            .advantages{
+                width: 113%;
+            }
+        }
+        .glide__slide .advantages__item{
+            .advantages__img{
+                img{ 
+                    transform: rotate(0deg);
+                    left: 0;
+                    width: 100%;
+                }
+            }
+        }
+        .glide__slide:nth-child(1) .advantages__item{
+
+            .advantages__img{
+                width: 50%;
+                img{ 
+                    width: 100%;
+                }
+            }
+        }
+        .glide__slide:nth-child(2) .advantages__item{
+            
+            .advantages__img{
+                width: 50%;
+                img{ 
+                    width: 100%;
+                }
+    
+            }
+        }
+        .glide__slide:nth-child(3) .advantages__item{
+
+            .advantages__img  {
+                width: 70%;
+                img{ 
+                    width: 100%;
+                }
+            }
+        }
+        .glide__slide:nth-child(4) .advantages__item{
+           
+            .advantages__img{
+                width: 50%;
+                img{ 
+                    width: 100%;
+                }
+            }
+           
+        }
+    }
+
+  
+}

@@ -1,0 +1,44 @@
+@include media-breakpoint-up(xxl) {
+  .kitchen-menu {
+    .kitchen-menu-decor__img{
+      position: absolute;
+      width: 745px;
+      height: 745px;
+      top: -300px;
+      right: 0;
+      overflow: hidden;
+      
+      &:after{
+        content: '';
+        position: absolute;
+        background: url("/decor-image/decore-8.png") no-repeat  304px 8px;
+        background-size: 100%;
+        width: 100%;
+        height: 100%;
+  }
+  @media screen and (min-width: 1700px){
+    &:after{
+      background: url("/decor-image/decore-8.png") no-repeat  204px 8px;
+  
+    }
+  }
+  @media screen and (min-width: 1800px){
+    &:after{
+      background: url("/decor-image/decore-8.png") no-repeat  104px 40px;
+  
+    }
+  }
+  }
+     .container{
+       max-width: 1419px;
+  }
+  	 .kitchen-menu__tabs{
+      padding: 25px 38px;
+      background-color: #FEF7EC;
+    }
+   
+    .nav-link{
+	    padding: 7px 30px;
+  }
+  }
+}

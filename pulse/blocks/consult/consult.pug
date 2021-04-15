@@ -1,0 +1,11 @@
+section.consult 
+    .container 
+        .row.consult__wrap
+            h2.consult__title.text-white.col-xl-11 Получите бесплатную консультацию <br> по подбору пульсометра 
+            p.consult__subtitle.text-white.col-xl-7  Просто заполните форму заявки <br> и мы перезвоним вам в течении 10 минут
+            #thank__wrap.consult__block-forms.block-forms.col-xl-4.col-lg-4.col-md-4  
+                form.feed-form(method="post" action="#")
+                    input(required name="name " type="text" placeholder="Ваше имя")
+                    input(required name="phone " type="tel" placeholder="Ваш телефон")
+                    input(required name="email " type="email" placeholder="Ваш E-mail") 
+                    button#btn.button_red.consult__button.text-white Заказать консультацию
