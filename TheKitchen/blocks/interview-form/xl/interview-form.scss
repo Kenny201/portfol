@@ -3,11 +3,11 @@
         max-width: 1192px;
         padding: 62px 0 77px;
 
-        &_button {
+        &__button {
             margin: 37px 0 0;
         }
 
-        &_title {
+        &__title {
             margin-bottom: 18px;
             font-size: 30px;
         }
@@ -22,7 +22,7 @@
                 background-size: 81%;
             }
         }
-        .interview-form_button .button-calculate {
+        .interview-form__button .button-calculate {
             width: 60%;
         }
     }

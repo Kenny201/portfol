@@ -19,12 +19,12 @@
             }
         }
 
-        &_title {
+        &__title {
             text-align: left;
             font-size: 26px;
         }
 
-        &_desk {
+        &__desk {
             font-size: 20px;
         }
 
@@ -33,7 +33,7 @@
         .text-menu {
             display: inline-block;
         }
-        .interview-form_button .button-calculate {
+        .interview-form__button .button-calculate {
             width: 80%;
         }
     }

@@ -5,21 +5,21 @@
             flex-direction: column;
         }
 
-        &_inner {
+        &__inner {
             display: flex;
             align-items: center;
             justify-content: space-between;
         }
 
-        &_desc {
+        &__desc {
             margin: 0 0 0 20px;
         }
-        .interview-form_button .button-calculate {
+        .interview-form__button .button-calculate {
             margin: 0 ;
             width: 60%;
         }
         
-        &_title {
+        &__title {
             text-align: center;
         }
     }
