@@ -46,16 +46,16 @@ $(function() {
         hoverpause: true,
         peek: 350,
         breakpoints: {
-            768: {
+            767: {
                 peek: {
                     before: 0,
                     after: 0,
                 }
             },
-            992: {
+            991: {
                 peek: 50
             },
-            1400: {
+            1399: {
                 peek: 200
             }
         }
