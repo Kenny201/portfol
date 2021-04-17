@@ -1,6 +1,6 @@
 @include media-breakpoint-up(xs) {
   .process {
-    padding: 40px 20px 45px 40px; 
+    padding: 40px 15px 45px 30px; 
     .container{
       padding: 0;
     }
@@ -19,24 +19,24 @@
     }
     &__item{
       display: flex; 
-      justify-content: center;
+      justify-content: space-around;
       width: 100%;
     }
     &__item-text{
-      padding: 0 0 0 20px;
+     
       text-align: left;
       display: flex;
       align-items: center;
+      width: 70%;
   }
 
     &__item-title{
-      width: 200px;
       margin:0; 
     }
     &__item-num{
       font-size: 3.125rem;
       text-shadow: 2px 0 0 #FED100;
-      font-weight: 100;
+      font-weight: 300;
     }
     &__item-desc {
       display: none;

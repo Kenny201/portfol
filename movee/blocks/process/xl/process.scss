@@ -3,6 +3,16 @@
     .container{
       max-width: 1107px;
     }
-    
+    &__item{
+
+      width: 48%;
+    }
+    &__title{
+      font-size: 1.875rem;
+    }
+    &__item-desc{
+      display: block;
+      width: 90%;
+    }
   }
 }
