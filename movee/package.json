@@ -6,7 +6,11 @@
   "author": "NoName",
   "license": "MIT",
   "dependencies": {
+<<<<<<< HEAD
     "@glidejs/glide": "^3.4.1",
+=======
+    "@glidejs/glide": "^3.3.0",
+>>>>>>> 7660293a0958943c26e059561b255e40e45dfaf8
     "autoprefixer": "^6.6.1",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.4",
