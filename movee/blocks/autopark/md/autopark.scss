@@ -1,0 +1,62 @@
+@include media-breakpoint-up(md) {
+  .autopark {
+    &__content{
+      margin: 55px 0 0 0;
+      .glide__slide img{
+        width:55%
+      }
+    }
+    &__tabs .nav-item .nav-link{
+      padding: 13px 64px;
+      &.active{
+        border: 1px solid #fed100;
+      }
+      
+    }
+    &__item-title{
+     
+
+      font-size:  1.125rem;
+      font-weight: 700;
+    }
+    &__btn-xs{
+      display: none;
+    }
+    .button-main{
+      width: 100%;
+    }
+    .b-button--style{
+      width: 100%;
+    }
+    &__item-wrap{
+      display: block;
+      text-align: left;
+    }
+    &__item-specific{
+      margin: 35px 0 35px 0 ;
+      p{
+        padding: 0 0 0 30px;
+        position: relative;
+        &:before{
+          content: '';
+          left: 0;
+          background: url(images/gal.svg) no-repeat center;
+          width: 20px; 
+          height: 20px;
+          position: absolute;
+        }
+      }
+    }
+    .xs-desc{
+      display: none;
+    }
+    .glide__bullets{
+      display: none;
+    }
+    .glide__slide{
+      display: flex;
+      justify-content:space-between;
+    }
+
+  }
+}

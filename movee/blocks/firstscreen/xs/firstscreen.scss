@@ -7,6 +7,7 @@
     background-color: #FED100;
     .b-button--style{
       color: #fff;
+      width: 296px;
     }
     &__inner{
       text-align: center;
@@ -36,6 +37,9 @@
     &__advnt{
       display: none;
     }
+    .b-button--style {
+      background-color: #FF352B;
+  }
   }
 }
 

@@ -1,0 +1,34 @@
+@include media-breakpoint-up(md) {
+  .prices {
+ 
+    &__item{
+    padding: 0 5px;
+    &:not(:nth-child(1)) {
+        display: block;
+    }
+    &:nth-child(2){
+      .prices__item-inner{
+        border: 2px solid #FED100;
+      }
+    }
+    }
+    &__item-inner{
+      padding: 40px 0;
+      border: 1px solid #EBEBEB;
+    }
+    &__subtitle {
+      display: block;
+  }
+    &__item-xs-more{
+      display:none
+    }
+    .button-main{
+      width: 90%;
+    }
+  .b-button--style {
+      width: 100%;
+      background-color: #FED100;
+      font-weight: 500;
+  }
+  }
+}

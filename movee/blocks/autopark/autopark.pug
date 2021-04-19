@@ -1,0 +1,265 @@
+.autopark
+    .container 
+        h2.autopark__title Автопарк
+        .autopark__subtitle 10 видов автомобилей от 800 кг до 10 тонн
+        .autopark__tabs 
+                ul.nav.nav-pills.mb-3#pills-tab(role="tablist")
+                    li.nav-item(role="presentation")
+                        button.nav-link.active#nav-home-tab( data-bs-toggle="pill" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true") Газели
+                    li.nav-item(role="presentation")
+                        button.nav-link#nav-profile-tab(data-bs-toggle="pill" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false") Каблуки
+                    li.nav-item(role="presentation")
+                        button.nav-link#nav-contact-tab(data-bs-toggle="pill" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false") Грузовики
+        .autopark__content     
+            .tab-content#pills-tabContent
+                .tab-pane.fade.show.active#nav-home(role="tabpanel" aria-labelledby="nav-home-tab")
+                    .autopark__item.gazel.glide
+                        .glide__track(data-glide-el="track")
+                            ul.glide__slides
+                                li.glide__slide 
+                                    .autopark__item-wrap
+                                        .autopark__item-title Газель 3 метра
+                                        .autopark__item-specific
+                                            p Ширина 2 м
+                                            p Высота 2 м
+                                            p Объем 16 м³
+                                            p Грузоподъемность 1,5 т
+                                        .autopark__btn-md 
+                                            include ../button-main/button-main
+                                                |Заказать
+                                    img(src="images/gazel.png" alt="Газель")
+                                    p.xs-desc Газель 3 метра / 1,5 тонны   
+                                li.glide__slide 
+                                    .autopark__item-wrap
+                                        .autopark__item-title Газель 3 метра
+                                        .autopark__item-specific
+                                            p Ширина 2 м
+                                            p Высота 2 м
+                                            p Объем 16 м³
+                                            p Грузоподъемность 1,5 т
+                                        .autopark__btn-md 
+                                            include ../button-main/button-main
+                                                |Заказать
+                                    img(src="images/gazel.png" alt="Газель")
+                                    p.xs-desc Газель 3 метра / 1,5 тонны   
+                                li.glide__slide 
+                                    .autopark__item-wrap
+                                        .autopark__item-title Газель 3 метра
+                                        .autopark__item-specific
+                                            p Ширина 2 м
+                                            p Высота 2 м
+                                            p Объем 16 м³
+                                            p Грузоподъемность 1,5 т
+                                        .autopark__btn-md 
+                                            include ../button-main/button-main
+                                                |Заказать
+                                    img(src="images/gazel.png" alt="Газель")
+                                    p.xs-desc Газель 3 метра / 1,5 тонны
+                                li.glide__slide 
+                                    .autopark__item-wrap
+                                        .autopark__item-title Газель 3 метра
+                                        .autopark__item-specific
+                                            p Ширина 2 м
+                                            p Высота 2 м
+                                            p Объем 16 м³
+                                            p Грузоподъемность 1,5 т
+                                        .autopark__btn-md 
+                                            include ../button-main/button-main
+                                                |Заказать
+                                    img(src="images/gazel.png" alt="Газель")
+                                    p.xs-desc Газель 3 метра / 1,5 тонны
+                                li.glide__slide
+                                    .autopark__item-wrap
+                                        .autopark__item-title Газель 3 метра
+                                        .autopark__item-specific
+                                            p Ширина 2 м
+                                            p Высота 2 м
+                                            p Объем 16 м³
+                                            p Грузоподъемность 1,5 т
+                                        .autopark__btn-md 
+                                            include ../button-main/button-main
+                                                |Заказать 
+                                    img(src="images/gazel.png" alt="Газель")
+                                    p.xs-desc Газель 3 метра / 1,5 тонны
+                                
+                        .glide__bullets(data-glide-el="controls[nav]")
+                            .glide__bullet(data-glide-dir="=0")
+                                .glide__bullet-inner
+                            .glide__bullet(data-glide-dir="=1")
+                                .glide__bullet-inner
+                            .glide__bullet(data-glide-dir="=2")
+                                .glide__bullet-inner
+                            .glide__bullet(data-glide-dir="=3")
+                                .glide__bullet-inner
+                            .glide__bullet(data-glide-dir="=4")
+                                .glide__bullet-inner
+                        .autopark__btn-xs
+                            include ../button-main/button-main
+                                    |Заказать
+                .tab-pane.fade#nav-profile(role="tabpanel" aria-labelledby="nav-profile-tab") 
+                    .cabluk.glide
+                        .glide__track(data-glide-el="track")
+                            ul.glide__slides
+                                li.glide__slide
+                                    .autopark__item-wrap
+                                        .autopark__item-title Каблук 3 метра
+                                        .autopark__item-specific
+                                            p Ширина 2 м
+                                            p Высота 2 м
+                                            p Объем 16 м³
+                                            p Грузоподъемность 1,5 т
+                                        .autopark__btn-md 
+                                            include ../button-main/button-main
+                                                |Заказать
+                                    img(src="images/cabluk.png" alt="Каблук")
+                                    p.xs-desc Каблук 2 метра / 1 тонна   
+                                li.glide__slide 
+                                    .autopark__item-wrap
+                                        .autopark__item-title Каблук 3 метра
+                                        .autopark__item-specific
+                                            p Ширина 2 м
+                                            p Высота 2 м
+                                            p Объем 16 м³
+                                            p Грузоподъемность 1,5 т
+                                        .autopark__btn-md 
+                                            include ../button-main/button-main
+                                                |Заказать
+                                    img(src="images/cabluk.png" alt="Каблук")
+                                    p.xs-desc Каблук 2 метра / 1 тонна   
+                                li.glide__slide 
+                                    .autopark__item-wrap
+                                        .autopark__item-title Каблук 3 метра
+                                        .autopark__item-specific
+                                            p Ширина 2 м
+                                            p Высота 2 м
+                                            p Объем 16 м³
+                                            p Грузоподъемность 1,5 т
+                                        .autopark__btn-md 
+                                            include ../button-main/button-main
+                                                |Заказать
+                                    img(src="images/cabluk.png" alt="Каблук")
+                                    p.xs-desc Каблук 2 метра / 1 тонна
+                                li.glide__slide 
+                                    .autopark__item-wrap
+                                        .autopark__item-title Каблук 3 метра
+                                        .autopark__item-specific
+                                            p Ширина 2 м
+                                            p Высота 2 м
+                                            p Объем 16 м³
+                                            p Грузоподъемность 1,5 т
+                                        .autopark__btn-md 
+                                            include ../button-main/button-main
+                                                |Заказать
+                                    img(src="images/cabluk.png" alt="Каблук")
+                                    p.xs-desc Каблук 2 метра / 1 тонна
+                                li.glide__slide
+                                    .autopark__item-wrap
+                                        .autopark__item-title Каблук 3 метра
+                                        .autopark__item-specific
+                                            p Ширина 2 м
+                                            p Высота 2 м
+                                            p Объем 16 м³
+                                            p Грузоподъемность 1,5 т
+                                        .autopark__btn-md 
+                                            include ../button-main/button-main
+                                                |Заказать 
+                                    img(src="images/cabluk.png" alt="Каблук")
+                                    p.xs-desc Каблук 2 метра / 1 тонна
+                        .glide__bullets(data-glide-el="controls[nav]")
+                            .glide__bullet(data-glide-dir="=0")
+                                .glide__bullet-inner
+                            .glide__bullet(data-glide-dir="=1")
+                                .glide__bullet-inner
+                            .glide__bullet(data-glide-dir="=2")
+                                .glide__bullet-inner
+                            .glide__bullet(data-glide-dir="=3")
+                                .glide__bullet-inner
+                            .glide__bullet(data-glide-dir="=4")
+                                .glide__bullet-inner
+                        .autopark__btn-xs
+                            include ../button-main/button-main
+                                    |Заказать
+                .tab-pane.fade#nav-contact(role="tabpanel" aria-labelledby="nav-contact-tab") 
+                    .truck.glide
+                        .glide__track(data-glide-el="track")
+                            ul.glide__slides
+                                li.glide__slide 
+                                    .autopark__item-wrap
+                                        .autopark__item-title Грузовик 5 метра
+                                        .autopark__item-specific
+                                            p Ширина 2 м
+                                            p Высота 2 м
+                                            p Объем 16 м³
+                                            p Грузоподъемность 1,5 т
+                                        .autopark__btn-md 
+                                            include ../button-main/button-main
+                                                |Заказать
+                                    img(src="images/truck.png" alt="Грузовик")
+                                    p.xs-desc Грузовик 5 метра / 5,5 тонны   
+                                li.glide__slide
+                                    .autopark__item-wrap
+                                        .autopark__item-title Грузовик 5 метра
+                                        .autopark__item-specific
+                                            p Ширина 2 м
+                                            p Высота 2 м
+                                            p Объем 16 м³
+                                            p Грузоподъемность 1,5 т
+                                        .autopark__btn-md 
+                                            include ../button-main/button-main
+                                                |Заказать 
+                                    img(src="images/truck.png" alt="Грузовик")
+                                    p.xs-desc Грузовик 5 метра / 5,5 тонны   
+                                li.glide__slide
+                                    .autopark__item-wrap
+                                        .autopark__item-title Грузовик 5 метра
+                                        .autopark__item-specific
+                                            p Ширина 2 м
+                                            p Высота 2 м
+                                            p Объем 16 м³
+                                            p Грузоподъемность 1,5 т
+                                        .autopark__btn-md 
+                                            include ../button-main/button-main
+                                                |Заказать 
+                                    img(src="images/truck.png" alt="Грузовик")
+                                    p.xs-desc Грузовик 5 метра / 5,5 тонны
+                                li.glide__slide
+                                    .autopark__item-wrap
+                                        .autopark__item-title Грузовик 5 метра
+                                        .autopark__item-specific
+                                            p Ширина 2 м
+                                            p Высота 2 м
+                                            p Объем 16 м³
+                                            p Грузоподъемность 1,5 т
+                                        .autopark__btn-md 
+                                            include ../button-main/button-main
+                                                |Заказать 
+                                    img(src="images/truck.png" alt="Грузовик")
+                                    p.xs-desc Грузовик 5 метра / 5,5 тонны
+                                li.glide__slide
+                                    .autopark__item-wrap
+                                        .autopark__item-title Грузовик 5 метра
+                                        .autopark__item-specific
+                                            p Ширина 2 м
+                                            p Высота 2 м
+                                            p Объем 16 м³
+                                            p Грузоподъемность 1,5 т
+                                        .autopark__btn-md 
+                                            include ../button-main/button-main
+                                                |Заказать 
+                                    img(src="images/truck.png" alt="Грузовик")
+                                    p.xs-desc Грузовик 5 метра / 5,5 тонны
+                        .glide__bullets(data-glide-el="controls[nav]")
+                            .glide__bullet(data-glide-dir="=0")
+                                .glide__bullet-inner
+                            .glide__bullet(data-glide-dir="=1")
+                                .glide__bullet-inner
+                            .glide__bullet(data-glide-dir="=2")
+                                .glide__bullet-inner
+                            .glide__bullet(data-glide-dir="=3")
+                                .glide__bullet-inner
+                            .glide__bullet(data-glide-dir="=4")
+                                .glide__bullet-inner
+                        .autopark__btn-xs
+                            include ../button-main/button-main
+                                    |Заказать
+

@@ -1,10 +1,11 @@
 @include media-breakpoint-up(lg) {
   .process {
-    
+  
     &__item-title{
-      font-size: 20px;
+      font-size: 1.25rem;
       width: 100%;
       padding: 0 0 15px 0;
+
     }
     &__item-text{
       flex-direction: column;

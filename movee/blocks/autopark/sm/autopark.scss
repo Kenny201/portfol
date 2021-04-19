@@ -1,0 +1,6 @@
+@include media-breakpoint-up(sm) {
+  .autopark {
+    &__content .glide__slide img{width:85%}
+   
+  }
+}

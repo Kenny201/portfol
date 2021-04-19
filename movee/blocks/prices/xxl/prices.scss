@@ -1,0 +1,7 @@
+@include media-breakpoint-up(xxl) {
+  .prices {
+    &__item{
+      padding: 0 25px;
+    }
+  }
+}

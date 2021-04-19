@@ -17,6 +17,8 @@ module.exports = {
             "firstscreen",
             "button-main",
             "process",
+            "prices",
+            "autopark",
         ],
         js: [],
         jsLibs: [
