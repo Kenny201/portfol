@@ -1,12 +1,8 @@
 @include media-breakpoint-up(lg) {
   .process {
-<<<<<<< HEAD
-  
-=======
     &__item{
       justify-content: space-between;
     }
->>>>>>> 7660293a0958943c26e059561b255e40e45dfaf8
     &__item-title{
       font-size: 1.25rem;
       width: 100%;

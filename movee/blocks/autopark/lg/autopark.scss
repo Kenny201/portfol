@@ -1,4 +1,49 @@
 @include media-breakpoint-up(lg) {
-  .autopark {
-  }
+    .autopark {
+        &__glide{
+          margin: 0;
+        }
+        &__subtitle {
+            display: block;
+            margin: 0 0 40px 0;
+            font-size: 1.375rem;
+            font-weight: 600;
+        }
+
+        &__tabs {
+            .nav {
+                width: 80%;
+                margin: 0 auto;
+            }
+        }
+
+        .glide__slide {
+            justify-content: space-around;
+        }
+
+        .glide__bullets {
+            display: none;
+        }
+
+        .glide__arrows {
+            display: block;
+        }
+
+        .glide__arrow {
+            border: none;
+            background: url(images/arrow.svg) no-repeat center;
+            box-shadow: none;
+        }
+
+        .glide__arrow--left {
+            top: 44%;
+            left: -4em;
+            transform: rotate(180deg);
+        }
+
+        .glide__arrow--right {
+            top: 45%;
+            right: -4em;
+        }
+    }
 }

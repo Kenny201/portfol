@@ -30,8 +30,5 @@ const config = {
     }
 };
 
-<<<<<<< HEAD
-module.exports = config;
-=======
 module.exports = config; 
->>>>>>> 7660293a0958943c26e059561b255e40e45dfaf8
+

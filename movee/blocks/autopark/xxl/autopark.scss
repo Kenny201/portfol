@@ -1,4 +1,9 @@
 @include media-breakpoint-up(xxl) {
-  .autopark {
-  }
+    .autopark {
+        &__tabs {
+            .nav {
+                width: 50%;
+            }
+        }
+    }
 }
