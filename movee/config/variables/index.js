@@ -30,7 +30,7 @@ module.exports = {
         ],
         json: "blocks/**/*.json",
         css: [],
-        sass: [ 
+        sass: [  
             
             "setting.block/bootstrap.scss",
             "setting.block/custom.scss",
